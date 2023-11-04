@@ -1,0 +1,9 @@
+namespace: production
+resources:
+- deployment.yaml
+- service.yaml
+- namespace.yaml
+secretGenerator:
+  - name: secrets
+    literals:
+      - MY_SECRET=On3H1torL3sS
