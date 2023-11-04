@@ -1,7 +1,7 @@
 name: Test & Build
 
 on:
-  pull_requests:
+  # pull_requests:
   push:
     branches:
       - main
@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: npm
-          cache-path: ./package.json
+          cache-dependency-path: ./package.json
           node-version: 15.5.1
 
       - name: Install deps
