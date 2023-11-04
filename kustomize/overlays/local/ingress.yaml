@@ -4,7 +4,8 @@ metadata:
   name: web-ingress
 spec:
   rules:
-    - http:
+    - host: web.test
+      http:
         paths:
           - pathType: Prefix
             path: /
